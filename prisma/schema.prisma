@@ -1,0 +1,22 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// model User {
+//   id           String   @id @default(uuid())
+//   is_active    Boolean  @default(false)
+//   createdAt    DateTime @default(now()) @map("created_at")
+//   updatedAt    DateTime @default(now()) @map("updated_at")
+//   country_code String
+
+//   @@map("users")
+// }
+
+//RODAR pnpm i
+
+//RODAR pnpm prisma init
